@@ -17,8 +17,6 @@
 #include "aTexture.h"
 #include "aColor.h"
 
-using namespace std;
-
 class aPanel {
 private:
 protected:

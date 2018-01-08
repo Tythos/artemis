@@ -1,0 +1,33 @@
+﻿  aTypewriter.cpp
+c:\users\brian\projects\artemis\src\atypewriter.cpp(37): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\atypewriter.cpp(562): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'kString'
+  aKeyboard.cpp
+  aGraphics.cpp
+c:\users\brian\projects\artemis\src\agraphics.cpp(48): error C3861: 'SDL_SetVideoMode': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(55): error C3861: 'SDL_WM_SetCaption': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(99): error C2065: 'SDL_OPENGL': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(99): error C2065: 'SDL_RESIZABLE': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(99): error C3861: 'SDL_SetVideoMode': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(112): error C2065: 'SDL_OPENGL': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(112): error C2065: 'SDL_RESIZABLE': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(112): error C2065: 'SDL_FULLSCREEN': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(112): error C3861: 'SDL_SetVideoMode': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(122): error C2065: 'SDL_OPENGL': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(122): error C2065: 'SDL_RESIZABLE': undeclared identifier
+c:\users\brian\projects\artemis\src\agraphics.cpp(122): error C3861: 'SDL_SetVideoMode': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(139): error C3861: 'gluOrtho2D': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(145): error C3861: 'gluPerspective': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(156): error C3861: 'gluPerspective': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(157): error C3861: 'gluLookAt': identifier not found
+c:\users\brian\projects\artemis\src\agraphics.cpp(164): error C3861: 'SDL_GL_SwapBuffers': identifier not found
+  aCamera.cpp
+c:\users\brian\projects\artemis\src\acamera.cpp(77): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(91): error C3861: 'gluLookAt': identifier not found
+c:\users\brian\projects\artemis\src\acamera.cpp(141): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(144): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(153): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(167): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(168): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(169): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\brian\projects\artemis\src\acamera.cpp(179): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...

@@ -13,8 +13,6 @@
 #include <ctime>
 #include "kString.h"
 
-using namespace std;
-
 class aStopwatch {
 private:
 	// Reference only: not accurate enough for timers

@@ -10,8 +10,6 @@
 #include "aStopwatch.h"
 #include "SDL.h"
 
-using namespace std;
-
 aStopwatch::aStopwatch() {
 	this->refresh();
 	currTicks = 0;

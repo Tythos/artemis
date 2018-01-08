@@ -17,8 +17,6 @@
 #include "aColor.h"
 #include "kString.h"
 
-using namespace std;
-
 class aTypewriter {
 private:
 	TTF_Font * currFont;

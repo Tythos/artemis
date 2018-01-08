@@ -199,18 +199,18 @@ eKeyState aKeyboard::checkState() {
 	// Return current keyboard state, checked in given order.
 	if (this->checkKey(SDLK_CAPSLOCK)) {
 		return AKEY_CAPS;
-	} else if (this->checkKey(SDLK_RMETA) || this->checkKey(SDLK_LMETA)) {
+/*	} else if (this->checkKey(SDLK_RMETA) || this->checkKey(SDLK_LMETA)) {
 		return AKEY_COMMAND;
 	} else if (this->checkKey(SDLK_LSUPER) || this->checkKey(SDLK_RSUPER)) {
-		return AKEY_WINDOWS;
+		return AKEY_WINDOWS;*/
 	} else if (this->checkKey(SDLK_RSHIFT) || this->checkKey(SDLK_LSHIFT)) {
 		return AKEY_SHIFT;
 	} else if (this->checkKey(SDLK_RCTRL) || this->checkKey(SDLK_LCTRL)) {
 		return AKEY_CTRL;
 	} else if (this->checkKey(SDLK_RALT) || this->checkKey(SDLK_LALT)) {
 		return AKEY_ALT;
-	} else if (this->checkKey(SDLK_NUMLOCK)) {
-		return AKEY_NUM;
+/*	} else if (this->checkKey(SDLK_NUMLOCK)) {
+		return AKEY_NUM;*/
 	} else {
 		return AKEY_NONE;
 	}

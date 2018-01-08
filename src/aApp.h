@@ -25,8 +25,6 @@
 #include "aCursor.h"
 #include "aSoundboard.h"
 
-using namespace std;
-
 class aApp {
 private:
 protected:

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C505FD62-4D5D-47F2-B1A9-41534DDF3695}</ProjectGuid>
+    <RootNamespace>library</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Brian\Projects\sdl\SDL2_mixer-2.0.1;C:\Users\Brian\Projects\sdl\SDL2_image-2.0.1;C:\Users\Brian\Projects\sdl\SDL2-2.0.5\include;C:\Users\Brian\Projects\sdl\SDL2_ttf-2.0.14;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Brian\Projects\sdl\SDL2_mixer-2.0.1;C:\Users\Brian\Projects\sdl\SDL2_image-2.0.1;C:\Users\Brian\Projects\sdl\SDL2-2.0.5\include;C:\Users\Brian\Projects\sdl\SDL2_ttf-2.0.14;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\Brian\Projects\sdl\SDL2_mixer-2.0.1;C:\Users\Brian\Projects\sdl\SDL2_image-2.0.1;C:\Users\Brian\Projects\sdl\SDL2-2.0.5\include;C:\Users\Brian\Projects\sdl\SDL2_ttf-2.0.14;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\Brian\Projects\sdl\SDL2_mixer-2.0.1;C:\Users\Brian\Projects\sdl\SDL2_image-2.0.1;C:\Users\Brian\Projects\sdl\SDL2-2.0.5\include;C:\Users\Brian\Projects\sdl\SDL2_ttf-2.0.14;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\aApp.h" />
+    <ClInclude Include="..\..\src\aButton.h" />
+    <ClInclude Include="..\..\src\aCamera.h" />
+    <ClInclude Include="..\..\src\aColor.h" />
+    <ClInclude Include="..\..\src\aConsole.h" />
+    <ClInclude Include="..\..\src\aCube.h" />
+    <ClInclude Include="..\..\src\aCursor.h" />
+    <ClInclude Include="..\..\src\aEvent.h" />
+    <ClInclude Include="..\..\src\aGraph.h" />
+    <ClInclude Include="..\..\src\aGraphics.h" />
+    <ClInclude Include="..\..\src\aKeyboard.h" />
+    <ClInclude Include="..\..\src\aLight.h" />
+    <ClInclude Include="..\..\src\aMesh.h" />
+    <ClInclude Include="..\..\src\aModel.h" />
+    <ClInclude Include="..\..\src\aMouse.h" />
+    <ClInclude Include="..\..\src\aObject.h" />
+    <ClInclude Include="..\..\src\aPanel.h" />
+    <ClInclude Include="..\..\src\aPlanet.h" />
+    <ClInclude Include="..\..\src\aSkybox.h" />
+    <ClInclude Include="..\..\src\aSoundboard.h" />
+    <ClInclude Include="..\..\src\aStopwatch.h" />
+    <ClInclude Include="..\..\src\aTexture.h" />
+    <ClInclude Include="..\..\src\aTypewriter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\aApp.cpp" />
+    <ClCompile Include="..\..\src\aButton.cpp" />
+    <ClCompile Include="..\..\src\aCamera.cpp" />
+    <ClCompile Include="..\..\src\aColor.cpp" />
+    <ClCompile Include="..\..\src\aConsole.cpp" />
+    <ClCompile Include="..\..\src\aCube.cpp" />
+    <ClCompile Include="..\..\src\aCursor.cpp" />
+    <ClCompile Include="..\..\src\aEvent.cpp" />
+    <ClCompile Include="..\..\src\aGraph.cpp" />
+    <ClCompile Include="..\..\src\aGraphics.cpp" />
+    <ClCompile Include="..\..\src\aKeyboard.cpp" />
+    <ClCompile Include="..\..\src\aLight.cpp" />
+    <ClCompile Include="..\..\src\aMesh.cpp" />
+    <ClCompile Include="..\..\src\aModel.cpp" />
+    <ClCompile Include="..\..\src\aMouse.cpp" />
+    <ClCompile Include="..\..\src\aObject.cpp" />
+    <ClCompile Include="..\..\src\aPanel.cpp" />
+    <ClCompile Include="..\..\src\aPlanet.cpp" />
+    <ClCompile Include="..\..\src\aSkybox.cpp" />
+    <ClCompile Include="..\..\src\aSoundboard.cpp" />
+    <ClCompile Include="..\..\src\aStopwatch.cpp" />
+    <ClCompile Include="..\..\src\aTexture.cpp" />
+    <ClCompile Include="..\..\src\aTypewriter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

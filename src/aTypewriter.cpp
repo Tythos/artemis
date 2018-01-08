@@ -580,7 +580,7 @@ bool aTypewriter::type(kString text, int contextWidth, int contextHeight) {
 	w.value = (float)(nextpoweroftwo(initial->w));
 	h.value = (float)(nextpoweroftwo(initial->h));
 	intermediary = SDL_CreateRGBSurface(0, (int)(w.value), (int)(h.value), 32, initial->format->Rmask, initial->format->Gmask, initial->format->Bmask, initial->format->Amask);
-	SDL_SetAlpha(initial, 0, 0);
+	SDL_SetSurfaceAlphaMod(initial, 0);
 	SDL_BlitSurface(initial, 0, intermediary, 0);
 	
 	// Register text surface as texture

@@ -45,7 +45,7 @@ bool aGraphics::setScreen(int newHeight, int newWidth, int newBpp) {
 		SDL_FreeSurface(screen);
 		screen = NULL;
 	}
-	screen = SDL_SetVideoMode(width, height, bpp, SDL_OPENGL | SDL_SWSURFACE | SDL_RESIZABLE);
+	screen = SDL_SetVideoMode(width, height, bpp, SDL_WINDOW_OPENGL | SDL_SWSURFACE | SDL_WINDOW_RESIZABLE);
 	if (screen == NULL) {
 		windowOk = false;
 		return windowOk;

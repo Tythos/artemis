@@ -7,8 +7,6 @@
 #include "aMouse.h"
 #include "aPanel.h"
 
-using namespace std;
-
 class aCursor : public aPanel {
 private:
 	aMouse * mouse;
