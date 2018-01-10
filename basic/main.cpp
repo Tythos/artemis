@@ -1,10 +1,16 @@
 /*
 */
 
-#include <SDL.h>
-#include <gl/glew.h>
-#include <SDL_opengl.h>
-#include <gl/glu.h>
+#ifndef _WIN32 // *NIX
+    #include <SDL2/SDL.h>
+    #include <GL/glew.h>
+    #include <SDL2/SDL_opengl.h>
+#else // WIN
+    #include <SDL.h>
+    #include <gl/glew.h>
+    #include <SDL_opengl.h>
+    #include <gl/glu.h>
+#endif
 #include <stdio.h>
 #include <string>
 
@@ -25,6 +31,7 @@ SDL_GLContext gContext;
 bool gRenderQuad = true;
 GLuint gProgramID = 0;
 GLint gVertexPos2DLocation = -1;
+GLuint gVAO = 0;
 GLuint gVBO = 0;
 GLuint gIBO = 0;
 
@@ -113,12 +120,15 @@ bool initGL() {
                         -0.5f, 0.5f
                     };
                     GLuint indexData[] = { 0, 1, 2, 3 };
+                    glGenVertexArrays(1, &gVAO);
+                    glBindVertexArray(gVAO);
                     glGenBuffers(1, &gVBO);
                     glBindBuffer(GL_ARRAY_BUFFER, gVBO);
                     glBufferData(GL_ARRAY_BUFFER, 2 * 4 * sizeof(GLfloat), vertexData, GL_STATIC_DRAW);
                     glGenBuffers(1, &gIBO);
                     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, gIBO);
                     glBufferData(GL_ELEMENT_ARRAY_BUFFER, 4 * sizeof(GLuint), indexData, GL_STATIC_DRAW);
+                    glBindVertexArray(0);
                 }
             }
         }
@@ -140,13 +150,13 @@ void render() {
     glClear(GL_COLOR_BUFFER_BIT);
     if (gRenderQuad) {
         glUseProgram(gProgramID);
+        glBindVertexArray(gVAO);
         glEnableVertexAttribArray(gVertexPos2DLocation);
-        glBindBuffer(GL_ARRAY_BUFFER, gVBO);
         glVertexAttribPointer(gVertexPos2DLocation, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), NULL);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, gIBO);
         glDrawElements(GL_TRIANGLE_FAN, 4, GL_UNSIGNED_INT, NULL);
         glDisableVertexAttribArray(gVertexPos2DLocation);
-        glUseProgram(NULL);
+        glBindVertexArray(0);
+        glUseProgram((GLuint)NULL);
     }
 }
 

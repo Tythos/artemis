@@ -9,7 +9,10 @@ exposed within the current command line scope when invoked; try running the
 appropriate *vcvarsall.bat* for your installation to ensure all system include
 and library paths are exposed, too.
 
-Shell scripts are for GCC--at least, once they're written.
+Shell scripts are for GCC, by way of g++. For consistency's sake, we break this
+into seperate calls for compilation and linking. These were tested on an Ubuntu
+VM, with libsdl2-dev and libglew-dev packaged installed. Check your specific
+platform to see what packages will provide the appropriate dependencices.
 
 Eventually, some IDE-friendly build targets (i.e., MSVC solution, Code::Blocks
 project) would be nice to support debugging. Until then, VS Code is a good
