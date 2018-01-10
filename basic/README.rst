@@ -10,3 +10,7 @@ appropriate *vcvarsall.bat* for your installation to ensure all system include
 and library paths are exposed, too.
 
 Shell scripts are for GCC--at least, once they're written.
+
+Eventually, some IDE-friendly build targets (i.e., MSVC solution, Code::Blocks
+project) would be nice to support debugging. Until then, VS Code is a good
+cross-platform solution that provides C++ syntax checking and code completion.
